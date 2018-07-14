@@ -1,0 +1,96 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+body{
+	background: #e2e2e2;
+}
+ /**
+  * home page css
+  */
+#hero{
+	background-image: url('/images/background/banner3.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 85vh;
+}
+a.dropdown-item:hover{
+	color: #e2e2e2;
+	background: rgba(0,0,0,0.1) !important;
+}
+#templates .d-flex:hover{
+	background: #ccc;
+	cursor: pointer;
+}
+/**
+ * hover effect on links
+ */
+.hvr-links{
+	text-decoration: none !important;
+	position: relative;
+	color: #fff;
+}
+.hvr-links:hover{
+	color: #fff;
+}
+.hvr-links:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0; 
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	transition: 0.3s;
+	background: $primary;
+}
+.hvr-links:hover:after{
+	transform: scaleX(1);
+}
+/**
+ * download icon of timeline page
+ */
+.download-icon{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid #e2e2e2;
+	box-shadow: inset 0 0 20px #e2e2e2;
+	line-height: 30px;
+	color: $info;
+	text-align: center;
+	cursor: pointer;
+}
+/**
+ * css for profile page
+ */
+#basic-info p:not(:last-child){
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5rem;
+}
+.user-tabs > div{
+	text-align: center;
+	margin: 10px 0;
+	height: 30px;
+}
+.user-tabs > div > a{
+	color: $info;
+	line-height: 30px;
+}
+.user-tabs > div > a:hover{
+	color: $info;
+}
